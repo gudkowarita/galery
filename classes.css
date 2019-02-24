@@ -1,4 +1,4 @@
-﻿.header
+.header
 {
 width: 100%;
 height: 650px;
@@ -140,12 +140,17 @@ width: 100%;
 }
 
 .proj1 {
-padding: 1% auto;
+margin: 1% 20%;
+height: 300px;
 }
 
 /* Style for "Picture 1" */
 .pic1{width: 300px;
-height: 150px;}
+height: 180px;
+position: relative;
+bottom: 180px;
+left: 210px;
+z-index: 2;}
 
 .highlight{
 /* Style for "OUR PROJEC" */
@@ -175,14 +180,11 @@ text-transform: uppercase;
 }
 
 /* Style for "Divider" */
-.line {width: 370px;
-height: 2px;
-background-color: #58c934;}
+
 
 .content{
 /* Style for "Is a set o" */
-width: 257px;
-height: 66px;
+width: 40%;
 color: #000000;
 font-family: Roboto;
 font-size: 18px;
@@ -200,24 +202,85 @@ font-weight: 400;
 line-height: 27px;
 }
 
+.proj1>.more {left:0;}
+
+.proj1>.bold_second_highlight {left:0;}
+
+.line {width: 370px;
+height: 2px;
+background-color: #58c934;
+z-index: 3 !important;}
+
+.proj2 {
+width: 40%;
+margin: 8%;
+height: 400px;
+}
+
+.proj2>.content, .bold_second_highlight, .more {
+width: 130px;
+position: relative; 
+left: 40px;}
+
+.proj2>.content {margin: 0.9%;}
+
+.proj2>.line_str {position: relative;
+bottom: 690px;
+left: 30px;}
+
 /* Style for "Picture 2" */
 .pic2 {width: 200px;
-height: 300px;
+height: 250px;
 }
 .green_border_near_2nd_picture
 { width: 200px;
-height: 372px;
-border: 12px solid #58c934;
+height: 420px;
+border: 6px solid #58c934;
+position: relative;
+bottom: 420px;
+right: 30px;
 }
 
 /* Style for "Divider near 2nd picture" */
 .line_str {width: 2px;
-height: 370px;
-background-color: #58c934;}
+height: 250px;
+background-color: #58c934;
+}
+
+
+
+.proj3 {height: 400px;
+margin-top: 19%;
+width: 40%;
+}
+
+.proj3>.content {width: 150px !important;
+}
+
+.proj3>.content, .bold_second_highlight, .more {
+width: 100px;
+position: relative; 
+left: 40px;}
+
 
 /* Style for "Picture 3" */
-.pic3 {width: 250px;
-height: 278px;}
+.pic3 {
+width: 200px;
+height: 218px;
+}
+
+.z2and3 {display: flex;
+flex-direction: row;
+height: 630px;
+margin-left: 15%;
+margin-right: auto;}
+
+.proj3>.line_str {position: relative;
+bottom: 360px;
+left: 30px;}
+
+.proj4 {height: 200px;
+margin-top: 20%;}
 
 
 /* Style for "Green border for u want to see more" */
