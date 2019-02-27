@@ -354,7 +354,7 @@ left: 68%;}
 
 /* Style for "our blog" */
 .blog {width: 100%;
-margin-left: 17%;
+margin-left: auto;
 margin-right: auto;
 height: 650px;}
 
@@ -380,7 +380,7 @@ height: 200px;
 position: relative;
 bottom: 250px;
 left: 50%;
-width: 60%;}
+/*width: 60%;*/}
 
 #new2>.pic1 {bottom: 200px; left: -15%;}
 
@@ -417,31 +417,38 @@ z-index: 301;
 
 .blog>div>.more {text-decoration: underline #58c934;}
 
-#contact {height: 200px;}
+#contact {height: 350px;}
+
+.people1>span.more {text-align: bottom;}
 
 /* Style for "line for name" */
-.line_for_name {width: 631px;
+.line_for_name {width: 70%;
 height: 12px;
 background-color: #f3f3f3; 
 border-bottom: 2px solid #58c934;
 border-top: #f3f3f3;
 border-left: #f3f3f3;
 border-right: #f3f3f3;
-}
+padding: 1%;}
 
 .line_for_name:focus {border-bottom: 2px solid #58c934;  /*разобраться с этим в js*/
 border-top: #f3f3f3;
 border-left: #f3f3f3;
 border-right: #f3f3f3;}
 
+#next {width: 20%; margin-left: auto; padding: 5%; text-decoration: underline #58c934;}
+
 /* Style for "Social" */
-.social {width: 138px;
+.social {width: 26px;
 height: 26px;
 background-color: #000000;
+
 }
 
+#twi {border-radius: 2px; height: 22px; margin-bottom: 2px; }
+
 /* Style for "Products in footer" */
-.copyright {width: 783px;
+.copyright {width: 100%;
 height: 41px;
 opacity: 0.5;
 color: #000000;
@@ -449,4 +456,37 @@ font-family: Roboto;
 font-size: 17px;
 font-weight: 400;
 line-height: 24px;
+text-align: center;
+margin-top: 1%;
+}
+
+
+@media screen and (min-width: 950px) {
+ul {padding: 10% 4%;}
+.header_cont {width: 1300px; margin-left: auto; margin-right: auto;}
+.projects {width: 80%; margin-left: auto; margin-right: auto; border: 5% solid #f3f3f3;}
+.z2and3 {margin-bottom: 5%;}
+.green_border_u_want {top: 175px;}
+.people1 {height: 450px;}
+.border_near_people {bottom: 330px; left: 66%; height: 80%;}
+.alt {bottom: 385px;}
+.blog {height: 750px; width: 80%; margin-top: 3%;}
+.blog_graphics {margin-left: 15%;}
+.blog_content {left: 60%;}
+.blog_graphics>.bold_second_highlight {left: 110px;}
+#new2>.pic1 {bottom: 300px;}
+#new2>.line_in_blog {bottom: 530px;}
+#new2>.bold_second_highlight {bottom: 660px; left: 26px;}
+.blog_content#text_in_new2 {left: 17%; bottom: 230px;}
+}
+
+@media screen and (max-width: 850px) {
+.people1 {height: 300px;}
+.border_near_people {bottom: 200px; left: 66%; height: 70%;}
+.alt {bottom: 215px;}
+.blog {margin-top: 5%; margin-left: 5%; height: 690px;}
+.blog_graphics {margin-left: 15%;}
+.blog_content {left: 60%;}
+#contact {height: 300px;}
+.blog_content#text_in_new2 {left: 17%; bottom: 170px;}
 }
