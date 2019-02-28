@@ -384,7 +384,7 @@ left: 50%;
 
 #new2>.pic1 {bottom: 200px; left: -15%;}
 
-.blog_content>.content {width: 100%;}
+.blog_content>.content {width: 50%;}
 
 /* Style for "green border in blog" */
 .border_blog {width: 60%; /*500px;*/
@@ -417,12 +417,14 @@ z-index: 301;
 
 .blog>div>.more {text-decoration: underline #58c934;}
 
-#contact {height: 350px;}
+#contact {height: 360px;}
+
+#contact>.highlight {padding-bottom: 3%;}
 
 .people1>span.more {text-align: bottom;}
 
 /* Style for "line for name" */
-.line_for_name {width: 70%;
+.line_for_name {width: 60%;
 height: 12px;
 background-color: #f3f3f3; 
 border-bottom: 2px solid #58c934;
@@ -436,7 +438,7 @@ border-top: #f3f3f3;
 border-left: #f3f3f3;
 border-right: #f3f3f3;}
 
-#next {width: 20%; margin-left: auto; padding: 5%; text-decoration: underline #58c934;}
+#next {width: 20%; margin-left: auto; padding: 2% 5%; text-decoration: underline #58c934;}
 
 /* Style for "Social" */
 .social {width: 26px;
@@ -461,11 +463,15 @@ margin-top: 1%;
 }
 
 
-@media screen and (min-width: 950px) {
+
+
+@media screen and (min-width: 1200px) {
 ul {padding: 10% 4%;}
 .header_cont {width: 1300px; margin-left: auto; margin-right: auto;}
 .projects {width: 80%; margin-left: auto; margin-right: auto; border: 5% solid #f3f3f3;}
+.proj1 {margin-left: 27%;}
 .z2and3 {margin-bottom: 5%;}
+.proj4{left: 35%;}
 .green_border_u_want {top: 175px;}
 .people1 {height: 450px;}
 .border_near_people {bottom: 330px; left: 66%; height: 80%;}
@@ -480,13 +486,102 @@ ul {padding: 10% 4%;}
 .blog_content#text_in_new2 {left: 17%; bottom: 230px;}
 }
 
+@media screen and (min-width: 1400px) {
+.people1 {height: 550px;}
+.border_near_people {bottom: 370px; left: 66%; height: 80%;}
+.alt {bottom: 455px;}
+.blog_content#text_in_new2 {left: 17%; bottom: 190px;}
+.blog {height: 850px;}
+.green_border_u_want {top: 200px;}
+}
+
+@media screen and (max-width: 1200px) {
+.people1 {height: 350px;}
+.border_near_people {bottom: 200px}
+.alt {bottom: 205px;}
+.blog {margin-top: 2%; height: 700px;}
+#new2>.pic1 {bottom: 300px;}
+#new2>.line_in_blog {bottom: 530px;}
+#new2>.bold_second_highlight {bottom: 660px; left: 26px;}
+.blog_content#text_in_new2 {left: 19%; bottom: 250px;}
+.blog_graphics {margin-left: 15%;}
+.blog_content {left: 60%;}
+.blog_graphics>.bold_second_highlight {left: 130px;}
+#contact {height: 300px;}
+}
+
 @media screen and (max-width: 850px) {
 .people1 {height: 300px;}
 .border_near_people {bottom: 200px; left: 66%; height: 70%;}
 .alt {bottom: 215px;}
-.blog {margin-top: 5%; margin-left: 5%; height: 690px;}
+.blog {margin-top: 5%; margin-left: 5%; height: 600px;}
 .blog_graphics {margin-left: 15%;}
 .blog_content {left: 60%;}
 #contact {height: 300px;}
-.blog_content#text_in_new2 {left: 17%; bottom: 170px;}
+.blog_content#text_in_new2 {left: 17%; bottom: 270px;}
+}
+
+@media screen and (max-width: 680px) {
+.border_green_for_heading {width: 50%; left: 181px;}
+.blog {height: 520px;}
+.blog_graphics>.bold_second_highlight {left: 80px;}
+}
+
+@media screen and (max-width: 612px) {
+.border_green_for_heading {width: 50%; left: 81px;}
+.proj1 {margin-left: 10%;}
+#new2>.pic1 {bottom: 270px;}
+#new2>.bold_second_highlight {bottom: 640px; left: 20px;}
+#new2>.line_in_blog {bottom: 500px;}
+.blog_content#text_in_new2 {left: 18%; bottom: 255px;}
+#contact {height: 260px;}
+}
+
+@media screen and (max-width: 580px) {
+.general_heading {font-size: 55px;}
+.projects {height: 1380px;}
+.pic1 {left: 180px; width: 200px;}
+.z2and3 {flex-direction: column; margin-left: 35%;}
+.proj4 {top: 280px;}
+.proj4>.pic1 {Width: 200px;}
+.proj4>.line {width: 270px;}
+.proj4>.content, .proj4>.bold_second_highlight, .proj4>.more {left: 140px;}
+.green_border_u_want {top: 120px;}
+.people1 {height: 220px;}
+.border_near_people {bottom: 130px; left: 66%; height: 60%;}
+.alt {bottom: 145px;}
+#new2>.pic1 {bottom: 250px;}
+#new2>.bold_second_highlight {bottom: 610px; left: 10px;}
+#new2>.line_in_blog {bottom: 480px;}
+.blog_content#text_in_new2 {left: 18%; bottom: 255px;}
+#contact {height: 240px;}
+}
+
+@media screen and (max-width: 450px) {
+.general_heading {font-size: 35px;}
+.border_green_for_heading {width: 70%; left: 51px;}
+.border_near_people {bottom: 110px; left: 66%; height: 65%;}
+.blog_content>.content {width: 60%;}
+.blog_graphics>.pic1 {width: 60%;}
+.blog_graphics>.bold_second_highlight {left: 40px;}
+#new2>.bold_second_highlight {left: -10px;}
+#new2>.line_in_blog {bottom: 460px;}
+.blog {height: 450px;}
+}
+
+@media screen and (max-width: 380px) {
+.general_heading {font-size: 25px;}
+.border_green_for_heading {width: 80%; left: 11px;}
+.pic1 {left: 140px; width: 180px;}
+.line {width: 200px;}
+.z2and3 {margin-left: 25%;}
+.projects {height: 1500px;}
+.proj4>.line {height: 200px; width: 2px;}
+.proj4>.content, .proj4>.bold_second_highlight, .proj4>.more {left: 80px; text-align: left;}
+.proj4>.bold_second_highlight {top: 120px;}
+.proj4>.content, .proj4>.more {bottom: 90px;}
+.green_border_u_want {height: 120px; top: 140px; width: 80%; left: 5%;}
+.div_u_want {width: 80%;}
+.border_near_people {bottom: 90px; left: 66%; height: 40%;}
+/*ЗДЕСЬ ДОДЕЛАТЬ БЛОГ И ПОДПИСИ ПОД ЛЮДЬМИ, ширина 374 пикс, дальше посмотреть адаптацию для телефона*/
 }
