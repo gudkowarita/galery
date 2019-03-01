@@ -37,6 +37,7 @@ flex-direction: row;
 border: 1px solid #f3f3f3;
 background-image: url(pics/back_photo1.png);
 background-repeat: no-repeat;
+
 /*
 */}
 
@@ -87,7 +88,7 @@ line-height: 27px;
 
 .presee {
 text-align: center;
-width: 86%;}
+width: 80%;}
 
 .general_heading{
 /* Style for "WE LOVE GA" */
@@ -467,7 +468,7 @@ margin-top: 1%;
 
 @media screen and (min-width: 1200px) {
 ul {padding: 10% 4%;}
-.header_cont {width: 1300px; margin-left: auto; margin-right: auto;}
+.header_cont {width: 1250px; margin-left: auto; margin-right: auto;}
 .projects {width: 80%; margin-left: auto; margin-right: auto; border: 5% solid #f3f3f3;}
 .proj1 {margin-left: 27%;}
 .z2and3 {margin-bottom: 5%;}
@@ -484,6 +485,7 @@ ul {padding: 10% 4%;}
 #new2>.line_in_blog {bottom: 530px;}
 #new2>.bold_second_highlight {bottom: 660px; left: 26px;}
 .blog_content#text_in_new2 {left: 17%; bottom: 230px;}
+.header_cont {width: 100%;}
 }
 
 @media screen and (min-width: 1400px) {
@@ -493,6 +495,7 @@ ul {padding: 10% 4%;}
 .blog_content#text_in_new2 {left: 17%; bottom: 190px;}
 .blog {height: 850px;}
 .green_border_u_want {top: 200px;}
+.header_cont {width: 1300px; margin-left: auto; margin-right: auto;}
 }
 
 @media screen and (max-width: 1200px) {
@@ -571,6 +574,7 @@ ul {padding: 10% 4%;}
 
 @media screen and (max-width: 380px) {
 .general_heading {font-size: 25px;}
+.header {height: 600px;}
 .border_green_for_heading {width: 80%; left: 11px;}
 .pic1 {left: 140px; width: 180px;}
 .line {width: 200px;}
@@ -583,5 +587,14 @@ ul {padding: 10% 4%;}
 .green_border_u_want {height: 120px; top: 140px; width: 80%; left: 5%;}
 .div_u_want {width: 80%;}
 .border_near_people {bottom: 90px; left: 66%; height: 40%;}
-/*ЗДЕСЬ ДОДЕЛАТЬ БЛОГ И ПОДПИСИ ПОД ЛЮДЬМИ, ширина 374 пикс, дальше посмотреть адаптацию для телефона*/
+.alt {bottom: 85px;}
+.blog {height: 860px; margin-left: 5%;}
+.blog_graphics>.pic1 {width: 90%; left: 20px;}
+.border_blog {width: 89%;}
+.blog_content {position: relative; top: 10px; left: 90px; width: 100%;}
+#new2>.pic1 {bottom: 0px; left: -65%;}
+#new2>.bold_second_highlight {bottom: 360px; left: -70px;}
+#new2>.line_in_blog {bottom: 220px; left: 10px;}
+.blog_content#text_in_new2 {top: 200px; width: 80%; left: 20%;}
+.green_border_u_want {height: 100px; top: 120px;}
 }
