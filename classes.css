@@ -1,3 +1,9 @@
+:root {
+--green_color: #58c934;
+--font: Arial;
+}
+
+
 .header
 {
 width: 100%;
@@ -11,7 +17,7 @@ background: linear-gradient(-15deg, transparent 70px, #f3f3f3 0) right, linear-g
 .logo{
 width: 220px;
 height: 19px;
-background-color: #58c934;
+background-color: var(--green_color);
 width: 80%;
 float: left;
 }
@@ -44,9 +50,7 @@ flex-direction: row;
 border: 1px solid #f3f3f3;
 background-image: url(pics/back_photo1.png);
 background-repeat: no-repeat;
-
-/*
-*/}
+}
 
 
 
@@ -59,27 +63,27 @@ li>a {text-decoration: none;}
 li.page_numbers>a{
 width: 16px;
 color: #000000;
-font-family: Roboto;
+font-family: var(--font);
 font-size: 18px;
 font-weight: 400;
 line-height: 27px;
 }
 li.current_page>a{
 width: 118px;
-height: 58px;
-color: #58c934;
-font-family: Roboto;
+height: 38px;
+color: var(--green_color);
+font-family: var(--font);
 font-size: 100px;
 font-weight: 700;
-line-height: 27px;
-padding: 15% 0 0 0;}
+line-height: 87px;
+margin-top: 25%;}
 
 /* Style for "PREV" */
 .next {
 width: 100%;
 height: 33px;
 color: #000000;
-font-family: Roboto;
+font-family: var(--font);
 font-weight: 400;
 text-transform: uppercase;
 text-align: right;
@@ -90,7 +94,7 @@ right: 20px;}
 sup(near the heading) {
 width: 19px;
 height: 14px;
-color: #58c934;
+color: var(--green_color);
 font-family: Roboto;
 font-size: 18px;
 font-weight: 400;
@@ -105,7 +109,7 @@ width: 80%;}
 /* Style for "WE LOVE GA" */
 width: 120px;
 color: #000000;
-font-family: Roboto;
+font-family: var(--font);
 font-size: 65px;
 font-weight: 700;
 line-height: 45px;
@@ -118,7 +122,7 @@ z-index: 300;
 .border_green_for_heading{
 width: 30%;
 height: 380px;
-border: 6px solid #58c934;
+border: 6px solid var(--green_color);
 position: relative;
 bottom: 70px;
 left: 301px;
@@ -130,7 +134,7 @@ padding: 3%;}
 width: 394px;
 height: 148px;
 color: #000000;
-font-family: Roboto;
+font-family: var(--font);
 font-size: 18px;
 font-weight: 400;
 line-height: 27px;
@@ -143,10 +147,11 @@ line-height: 27px;
 .more {
 height: 14px;
 color: #000000;
-font-family: Roboto;
+font-family: var(--font);
 font-size: 18px;
 font-weight: 400;
 line-height: 27px;
+text-decoration: underline var(--green_color);
 }
 
 
@@ -172,7 +177,7 @@ z-index: 2;}
 /* Style for "OUR PROJEC" */
 width: 100%;
 color: #000000;
-font-family: Roboto;
+font-family: var(--font);
 font-size: 32px;
 font-weight: 700;
 line-height: 27px;
@@ -188,7 +193,7 @@ padding-top: 2%;
 width: 161px;
 height: 37px;
 color: #000000;
-font-family: Roboto;
+font-family: var(--font);
 font-size: 18px;
 font-weight: 700;
 line-height: 24px;
@@ -202,7 +207,7 @@ text-transform: uppercase;
 /* Style for "Is a set o" */
 width: 30%;
 color: #000000;
-font-family: Roboto;
+font-family: var(--font);
 font-size: 18px;
 font-weight: 400;
 line-height: 24px;
@@ -212,7 +217,7 @@ line-height: 24px;
 width: 85px;
 height: 15px;
 color: #000000;
-font-family: Roboto;
+font-family: var(--font);
 font-size: 18px;
 font-weight: 400;
 line-height: 27px;
@@ -224,7 +229,7 @@ line-height: 27px;
 
 .line {width: 370px;
 height: 2px;
-background-color: #58c934;
+background-color: var(--green_color);
 z-index: 3 !important;}
 
 .proj2 {
@@ -251,7 +256,7 @@ height: 250px;
 .green_border_near_2nd_picture
 { width: 200px;
 height: 420px;
-border: 6px solid #58c934;
+border: 6px solid var(--green_color);
 position: relative;
 bottom: 420px;
 right: 30px;
@@ -260,7 +265,7 @@ right: 30px;
 /* Style for "Divider near 2nd picture" */
 .line_str {width: 2px;
 height: 250px;
-background-color: #58c934;
+background-color: var(--green_color);
 }
 
 
@@ -327,7 +332,7 @@ padding-top: 1%;}
 
 .green_border_u_want {width: 65%;
 height: 100px;
-border: 6px solid #58c934;
+border: 6px solid var(--green_color);
 position: relative;
 top: 140px;
 left: 14%;}
@@ -336,7 +341,7 @@ left: 14%;}
 background-color: #f3f3f3;
 text-align: center;
 padding: 2%;
-height: 280px;  /* поправить в адаптивности*/
+height: 280px;
 background: linear-gradient(-15deg, transparent 70px, #f3f3f3 0) right, linear-gradient(10deg, transparent 10%, #f3f3f3 0) left;
 }
 
@@ -362,7 +367,7 @@ margin-top: 0;
 /* Style for "green border" */
 .border_near_people {width: 30%;
 height: 60%;
-border: 6px solid #58c934;
+border: 6px solid var(--green_color);
 position: relative;
 bottom: 170px;
 left: 68%;}
@@ -404,7 +409,7 @@ left: 50%;
 /* Style for "green border in blog" */
 .border_blog {width: 60%; /*500px;*/
 height: 200px; /*524px;*/
-border: 5px solid #58c934;
+border: 5px solid var(--green_color);
 position: relative;
 bottom: 220px;
 z-index: 301;}
@@ -412,7 +417,7 @@ z-index: 301;}
 /* Style for "Divider" */
 .line_in_blog {width: 2px;
 height: 150px;
-background-color: #58c934;
+background-color: var(--green_color);
 position: relative;
 bottom: 420px;
 left: 15%;
@@ -421,7 +426,7 @@ z-index: 301;
 
 #new2>.line_in_blog {width: 2px;
 height: 150px;
-background-color: #58c934;
+background-color: var(--green_color);
 position: relative;
 bottom: 420px;
 left: 29%;
@@ -430,7 +435,7 @@ z-index: 301;
 
 #new2>.bold_second_highlight {left: 10px; text-align: right;}
 
-.blog>div>.more {text-decoration: underline #58c934;}
+.blog>div>.more {text-decoration: underline var(--green_color);}
 
 #contact {height: 360px;}
 
@@ -442,24 +447,43 @@ z-index: 301;
 .line_for_name {width: 60%;
 height: 12px;
 background-color: #f3f3f3; 
-border-bottom: 2px solid #58c934;
+border-bottom: 2px solid var(--green_color);
 border-top: #f3f3f3;
 border-left: #f3f3f3;
 border-right: #f3f3f3;
 padding: 1%;}
 
-.line_for_name:focus {border-bottom: 2px solid #58c934;  /*разобраться с этим в js*/
+#name_in_form, #email {text-decoration: none;}
+
+.line_for_name:focus {border-bottom: 2px solid var(--green_color);  /*разобраться с этим в js*/
 border-top: #f3f3f3;
 border-left: #f3f3f3;
 border-right: #f3f3f3;}
 
-#next {width: 20%; margin-left: auto; padding: 2% 5%; text-decoration: underline #58c934;}
+#next, #finish {
+height: 50px;
+ padding: 2% 0%;
+/*border-bottom: 2px solid var(--green_color);
+border-top: none;
+border-left: none;
+border-right: none;*/
+border: none;
+background-color: #f3f3f3;
+text-decoration: underline var(--green_color);
+}
+
+.x{width: 50%;
+margin-left: auto; 
+text-align: right;
+padding-right: 10%;} /*this class was created to locate the button "next" on the right*/
+.x>.more {height: 50px;}
+#next_picture {}
+
 
 /* Style for "Social" */
 .social {width: 26px;
 height: 26px;
 background-color: #000000;
-
 }
 
 #twi {border-radius: 2px; height: 22px; margin-bottom: 2px; }
@@ -469,7 +493,7 @@ background-color: #000000;
 height: 41px;
 opacity: 0.5;
 color: #000000;
-font-family: Roboto;
+font-family: var(--font);
 font-size: 17px;
 font-weight: 400;
 line-height: 24px;
