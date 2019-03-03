@@ -46,19 +46,23 @@ function validateName(field) {
 }
 
 function validateEmail(field) {
-	if (field == "" return "Email wasnt entered"
+	if (field == "") return "Email wasnt entered"
 	else if (!((field.indexOf(".")>0) &&
 		   (field.indexOf("@")>0)) ||
 		   /[^a-zA-Z0-9.@_-]/.test(field))
 		return "Email is in wrong format"
 	return ""
-}
+} 
+
 
 
 
 
 $(document).ready(function(){
 
+$('li, li>a').mouseover(function(){$(this).css("opacity","0.67")})
+	     .mouseout(function(){$(this).css("opacity","1")});
 $('#num1, #num2, #num3, #num4').click(function(){$('#num1, #num2, #num3, #num4').removeClass('current_page'); $(this).addClass('current_page')});
+$('#menu').click(function(){$('.list').toggle()});
 
 });
