@@ -12,10 +12,15 @@
 
  <script type="text/javascript" src="script.js"></script> 
 
+<ul class="list" type="none"><li><a href="#ourprojects">Our projects</a></li>
+	<li><a href="#whoweare"> Who we are</a></li>
+	<li><a href="#ourblog"> Our blog</a></li>
+	<li><a href="#contact"> Contact us</a></li>
+</ul>
 <div class="header">
 <div class="line_above">
 	<div class="logo">galery</div>
-	<span id="menu_object"><img id="menu" src="pics/Burger_Menu.png"></span>
+	<span id="menu_object"><a href="#"><img id="menu" src="pics/Burger_Menu.png"></a></span>
 </div>  <!-- line above -->
 <div class="header_cont">
 	<ul type="none"><li id="num1" class="page_numbers"><a href="#" onclick="show('page1');return false;">01</a></li>
@@ -51,7 +56,7 @@ jyfutdt utr oiyui7g gytlniju uyi7tgiyg iyhiutgligk</span>
 
 <br>
 
-<main class="projects">
+<main class="projects" id="ourprojects">
 	<div class="highlight">our projects</div>
 	<div class="proj1"><br><br><br><br>
 		<span class="bold_second_highlight">urban</span>
@@ -96,7 +101,7 @@ jyfutdt utr oiyui7g gytlniju uyi7tgiyg iyhiutgligk</span>
 		<span class="more">View all <img src="pics/Arrow_indicator.png"></span>
 	</div>
 
-<div class="people1">
+<div id="whoweare" class="people1">
 	<span class="highlight">We are</span><br>
 	<span class="content">ksdf ufguw fugfe wufgue</span><br><br>
 	<img class="people_on_picture" src="pics/photo.png" alt="">
@@ -107,7 +112,7 @@ jyfutdt utr oiyui7g gytlniju uyi7tgiyg iyhiutgligk</span>
 	
 </div>
 
-<div class="blog">
+<div class="blog" id="ourblog">
 	<div class="highlight">Our blog</div><br>
 	<div class="blog_graphics">
 		<img class="pic1" src="pics/photo.png" alt="">
@@ -157,21 +162,21 @@ jyfutdt utr oiyui7g gytlniju uyi7tgiyg iyhiutgligk</span>
 	<div class="highlight">Contact</div><br>
 
 <div id="name_div">	
-	<form>	
+	<form onSubmit="return validate(this)">
 		<span id="name_in_form" class="more">Name: </span>
-		<input class="line_for_name" type="text" name="name">
+		<input class="line_for_name" type="text" name="name" required="required">
 		<div class="x">
 			<a href="#" onclick="next('email_div');return false;">
-			<input onSubmit="return validate(this)" id="next" class="more" type="submit" value="Next ">
+			<input id="next" class="more" type="submit" value="Next ">
 			<img id="next_picture" src="pics/Arrow_indicator.png"></a>
 		</div> <!-- class x-->
-</div><!--name div-->
+</div><!--name div--></form>
 
-<div id="email_div">	
+<div id="email_div"><form onSubmit="return validate(this)">	
 		<span id="email" class="more">E-mail: </span>
 		<input class="line_for_name" type="text" name="email">
 		<div class="x">
-			<input onSubmit="return validate(this)" id="finish" class="more" type="submit" value="Finish ">
+			<input id="finish" class="more" type="submit" value="Finish ">
 			<img id="next_picture" src="pics/Arrow_indicator.png">
 		</div><!--class x-->
 	</form>
