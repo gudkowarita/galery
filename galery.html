@@ -18,10 +18,10 @@
 	<span id="menu_object"><img id="menu" src="pics/Burger_Menu.png"></span>
 </div>  <!-- line above -->
 <div class="header_cont">
-	<ul type="none"><li class="page_numbers"><a href="#" onclick="show('page1');return false;">01</a></li><br><br><br>
-	<li class="current_page"> <a href="#" onclick="show('page2');return false;">02</a></li>
-	<li class="page_numbers"><a href="#" onclick="show('page3');return false;">03</a></li>
-	<li class="page_numbers"><a href="#" onclick="show('page4');return false;">04</a></li></ul>
+	<ul type="none"><li id="num1" class="page_numbers"><a href="#" onclick="show('page1');return false;">01</a></li>
+	<li id="num2" class="page_numbers current_page"> <a href="#" onclick="show('page2');return false;">02</a></li>
+	<li id="num3" class="page_numbers"><a href="#" onclick="show('page3');return false;">03</a></li>
+	<li id="num4" class="page_numbers"><a href="#" onclick="show('page4');return false;">04</a></li></ul>
 	<div class="presee">
 		<span class="general_heading">we love gardening</span>
 		<div class="border_green_for_heading">
@@ -58,12 +58,12 @@ jyfutdt utr oiyui7g gytlniju uyi7tgiyg iyhiutgligk</span>
 		<div class="line"></div>
 		<p class="content">eth ritruiy rgyhghjgtjyjgj gfhf fhuyj</p>
 		<div class="more">Read more <img src="pics/Arrow_indicator.png"></div><br>
-		<img class="pic1" src="pics/photo.png">
+		<img class="pic1" src="pics/photo.png" alt="">
 	</div> <!--proj1-->
 
 <div class="z2and3">
 	<div class="proj2">
-		<img class="pic2" src="pics/photo.png">
+		<img class="pic2" src="pics/photo.png" alt="">
 		<div class="bold_second_highlight">urban</div>
 		<p class="content">eth ritruiy rgyh iugfty tfdtud utduk</p>
 		<div class="more">Read more <img src="pics/Arrow_indicator.png"></div><br>
@@ -75,13 +75,13 @@ jyfutdt utr oiyui7g gytlniju uyi7tgiyg iyhiutgligk</span>
 		<div class="bold_second_highlight">urban</div>
 		<div class="content">eth ritruiy rgyh jyrf tryjed</div>
 		<div class="more">Read more <img src="pics/Arrow_indicator.png"></div><br>
-		<img class="pic3" src="pics/photo.png">
+		<img class="pic3" src="pics/photo.png" alt="">
 		<div class="line_str"></div>
 	</span> <!--proj3-->
 </div><!-- 2and3-->
 
 	<div class="proj4">
-		<img class="pic1" src="pics/photo.png">
+		<img class="pic1" src="pics/photo.png" alt="">
 		<div class="bold_second_highlight">urban</div>
 		<div class="line"></div>
 		<div class="content">eth ritruiy rgyh</div>
@@ -99,9 +99,9 @@ jyfutdt utr oiyui7g gytlniju uyi7tgiyg iyhiutgligk</span>
 <div class="people1">
 	<span class="highlight">We are</span><br>
 	<span class="content">ksdf ufguw fugfe wufgue</span><br><br>
-	<img class="people_on_picture" src="pics/photo.png">
-	<img class="people_on_picture" src="pics/photo.png">
-	<img class="people_on_picture" src="pics/photo.png">
+	<img class="people_on_picture" src="pics/photo.png" alt="">
+	<img class="people_on_picture" src="pics/photo.png" alt="">
+	<img class="people_on_picture" src="pics/photo.png" alt="">
 	<div class="border_near_people"></div>
 	<div class="alt"><div class="content">dlkuf kjyuf</div><div class="content">dlkuf</div><div class="content">dlkuf</div></div><!--alt-->
 	
@@ -110,7 +110,7 @@ jyfutdt utr oiyui7g gytlniju uyi7tgiyg iyhiutgligk</span>
 <div class="blog">
 	<div class="highlight">Our blog</div><br>
 	<div class="blog_graphics">
-		<img class="pic1" src="pics/photo.png">
+		<img class="pic1" src="pics/photo.png" alt="">
 		<div class="border_blog"></div>
 		<div class="line_in_blog"></div>
 		<span class="bold_second_highlight">urban</span> 
@@ -138,7 +138,7 @@ jyfutdt utr oiyui7g gytlniju uyi7tgiyg iyhiutgligk</span>
 	</div> <!--blog content"-->
 
 	<div id="new2" class="blog_graphics">
-		<img class="pic1" src="pics/photo.png">
+		<img class="pic1" src="pics/photo.png" alt="">
 		<div class="line_in_blog"></div>
 		<span class="bold_second_highlight">urban</span> 
 	</div> <!--blog graphics-->
@@ -155,9 +155,28 @@ jyfutdt utr oiyui7g gytlniju uyi7tgiyg iyhiutgligk</span>
 
 <div id="contact" class="people1">
 	<div class="highlight">Contact</div><br>
-	<span class="more">Name: </span>
-	<input class="line_for_name">
-	<div id="next" class="more">Next   <img src="pics/Arrow_indicator.png"></div><br>
+
+<div id="name_div">	
+	<form>	
+		<span id="name_in_form" class="more">Name: </span>
+		<input class="line_for_name" type="text" name="name">
+		<div class="x">
+			<a href="#" onclick="next('email_div');return false;">
+			<input onSubmit="return validate(this)" id="next" class="more" type="submit" value="Next ">
+			<img id="next_picture" src="pics/Arrow_indicator.png"></a>
+		</div> <!-- class x-->
+</div><!--name div-->
+
+<div id="email_div">	
+		<span id="email" class="more">E-mail: </span>
+		<input class="line_for_name" type="text" name="email">
+		<div class="x">
+			<input onSubmit="return validate(this)" id="finish" class="more" type="submit" value="Finish ">
+			<img id="next_picture" src="pics/Arrow_indicator.png">
+		</div><!--class x-->
+	</form>
+</div><!--email div-->
+
 	<img class="social" src="pics/soc1.png">
 	<img id="twi" src="pics/soc2.png">
 	<img class="social" src="pics/soc3.png">
