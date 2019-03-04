@@ -64,5 +64,7 @@ $('li, li>a').mouseover(function(){$(this).css("opacity","0.67")})
 	     .mouseout(function(){$(this).css("opacity","1")});
 $('#num1, #num2, #num3, #num4').click(function(){$('#num1, #num2, #num3, #num4').removeClass('current_page'); $(this).addClass('current_page')});
 $('#menu').click(function(){$('.list').toggle()});
-
+$('#more_in_header').click(function(){$('.modal').css('display','block')});
+$('.modal').click(function(){$('.modal').css('display','none')});
+	
 });
