@@ -4,6 +4,24 @@
 }
 
 
+.modal {
+background-color: grey;
+z-index: 600;
+position: fixed;
+width: 100%;
+height: 100%;
+opacity: 0.7;
+display: none;
+}
+
+.content_modal {
+z-index: 601;
+width: 30%;
+background-color: yellow;
+font-family: var(--font);
+opacity: 0.99;
+}
+
 .header
 {
 width: 100%;
@@ -60,8 +78,14 @@ width: 100%; padding-top: 65%;}
 
 .header_cont {
 padding: 1%;
+
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+
 display: flex;
 flex-direction: row;
+
 border: 1px solid #f3f3f3;
 background-image: url(pics/back_photo1.png);
 background-repeat: no-repeat;
@@ -159,7 +183,7 @@ line-height: 27px;
 
 
 /* Style for "Read More" */
-.more {
+.more>a, .more {
 height: 14px;
 color: #000000;
 font-family: var(--font);
